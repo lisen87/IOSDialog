@@ -92,7 +92,7 @@ public class IOSDialog extends BottomSheetDialog{
          * @param itemName
          * @return
          */
-        public Buidler addItem(String itemName){
+        public Buidler addItem(CharSequence itemName){
             ItemBean itemBean = new ItemBean();
             itemBean.setName(itemName);
             itemBeans.add(itemBean);
@@ -203,7 +203,7 @@ public class IOSDialog extends BottomSheetDialog{
 
 
     public static class ItemBean{
-        private String name;
+        private CharSequence name;
         private int textColor = android.R.color.black;
 
         private Object t;
@@ -212,11 +212,11 @@ public class IOSDialog extends BottomSheetDialog{
         }
 
 
-        public String getName() {
+        public CharSequence getName() {
             return name;
         }
 
-        public void setName(String name) {
+        public void setName(CharSequence name) {
             this.name = name;
         }
 
